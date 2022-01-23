@@ -30,4 +30,5 @@ leagueLeaders <- nbaSummary %>%
   html_nodes("#div_leaders") %>% 
   html_table()
 
+write.csv(perGameTeam,paste0('/data',Sys.Date(),'perGameTeam','.csv'))
 
