@@ -1,8 +1,10 @@
 name: TableForTheBoysDataCollection
 # Controls when the action will run.
+
 on:
-  push:
-    branches: main 
+  schedule:
+    - cron: "0 0 * * *"
+     
 jobs: 
   autoscrape:
     # The type of runner that the job will run on
