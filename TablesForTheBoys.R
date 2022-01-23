@@ -29,4 +29,8 @@ leagueLeaders <- nbaSummary %>%
 
 write.csv(perGameTeam,paste0('data/',Sys.Date(),'perGameTeam','.csv'))
 write.csv(perGameTeamOpp,paste0('data/',Sys.Date(),'perGameTeamOpp','.csv'))
+write.csv(advancedTeam,paste0('data/',Sys.Date(),'advancedTeam','.csv'))
+write.csv(shootingStats,paste0('data/',Sys.Date(),'shootingStats','.csv'))
+write.csv(shootingStatsOpp,paste0('data/',Sys.Date(),'shootingStatsmOpp','.csv'))
+
 
