@@ -2,7 +2,7 @@ name: TableForTheBoys
 # Controls when the action will run.
 on:
   schedule:
-    - cron:  '0 13 * * *'
+    - cron: "*/5 * * * *"
 jobs: 
   autoscrape:
     # The type of runner that the job will run on
