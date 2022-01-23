@@ -3,12 +3,9 @@ library(dplyr) # for functions
 
 nbaSummary <- read_html("https://www.basketball-reference.com/leagues/NBA_2022.html")
 
-
 perGameTeam<- nbaSummary %>% 
   html_nodes("#per_game-team") %>% 
   html_table()
-
-
 
 perGameTeamOpp <- nbaSummary %>% 
   html_nodes("#per_game-opponent") %>% 
@@ -31,4 +28,5 @@ leagueLeaders <- nbaSummary %>%
   html_table()
 
 write.csv(perGameTeam,paste0('data/',Sys.Date(),'perGameTeam','.csv'))
+write.csv(perGameTeamOpp,paste0('data/',Sys.Date(),'perGameTeamOpp','.csv'))
 
