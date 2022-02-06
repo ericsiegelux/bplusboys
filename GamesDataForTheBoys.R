@@ -43,8 +43,11 @@ for (row in 1:nrow(allGames)) {
 }
 
 for (row in 1:nrow(allGames)) {
-  if(allGames[row,"Var.8"] == " "){
+  if(allGames[row,"Var.8"] == ""){
     allGames[row,"Var.8"] <- "0"
+  }
+  else if(allGames[row,"Var.8"] == "OT"){
+    allGames[row,"Var.8"] <- "1"
   }
   else{
     otValue <- strsplit(allGames[row,"Var.8"], "")[[1]][1]
